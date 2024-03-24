@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 4rem 0;
+    }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .header-top {
+    position: relative;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+  
+  hr.header-divider {
+    border: none;
+    border-bottom: 2px solid #555;
+    margin: 3em 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-top {
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      margin-bottom: 20px;
+
+    }
+  
+    .contact-info {
+      margin-top: 20px;
+    }
+  
+    h1 {
+      position: static;
+      transform: none;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  .welcome-message {
+    text-align: center;
+    padding: 60px 50px; /* Вертикальные отступы и горизонтальный padding для красоты */
+    margin-bottom: 50px;
+   }
+  
+  .welcome-message h1 {
+    font-size: 3rem; /* Увеличенный размер для h1 */
+    color: #333; /* Цвет текста, при необходимости измените */
+    margin-bottom: 50px; /* Отступ между h1 и h3 */
+    font-weight: normal;
+  }
+  
+  .welcome-message h4 {
+    font-size: 1.5rem; /* Размер для h3 */
+    color: #555; /* Цвет текста, при необходимости измените */
+    font-weight: normal;
+    padding-top: 110px;
+  }
+  .drinks-button {
+    display: inline-block; /* делаем элемент блочным, чтобы мог применять padding */
+    padding: 10px 20px; /* внутренние отступы вокруг текста */
+    margin-top: 20px; /* отступ сверху */
+    background-color: rgb(233, 104, 18); /* цвет фона кнопки */
+    color: white; /* цвет текста кнопки */
+    text-decoration: none; /* убираем подчеркивание текста с ссылки */
+    font-weight: bold; /* делаем текст жирным */
+    border: none; /* убираем границу */
+    border-radius: 5px; /* закругляем углы */
+    cursor: pointer; /* меняем курсор при наведении на ссылку */
+    transition: background-color 0.3s; /* плавное изменение цвета фона */
+  }
+  
+  .drinks-button:hover {
+    background-color: #e69500; /* темный оттенок оранжевого при наведении */
+  }
+  
+  /* Возможно, вам понадобится добавить медиа-запросы для адаптивности */
+  
+  @media (max-width: 768px) {
+    .welcome-message h1 {
+      font-size: 2.5rem; /* Немного уменьшим для мобильных устройств */
+    }
+  
+    .welcome-message h3 {
+      font-size: 1.2rem; /* Адаптируем размер для мобильных */
+    }
+    
+  }
+  .about-us {
+    background-color: #f9f9f9; /* Основной фон секции; выберите подходящий */
+    padding: 40px 20px; /* Внутренние отступы сверху и снизу, слева и справа */
+    text-align: center; /* Центрирование текста в секции */
+  }
+  
+  .about-us h2 {
+    color: #333; /* Цвет заголовка */
+    margin-bottom: 30px; /* Отступ заголовка от текста */
+    font-size: 2.2rem; /* Размер шрифта заголовка */
+  }
+  
+  .about-us p {
+    color: #555; /* Цвет текста параграфа */
+    font-size: 1.1rem; /* Размер шрифта текста параграфа */
+    line-height: 1.6; /* Высота строки текста */
+    max-width: 800px; /* Максимальная ширина текстового блока */
+    margin: 0 auto; /* Авто-маргины для центрирования блока */
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  
+  @media (max-width: 768px) {
+    .about-us h2 {
+      font-size: 1.8rem; /* Меньший размер шрифта заголовка для мобильных устройств */
+    }
+  
+    .about-us p {
+      font-size: 1rem; /* Меньший размер шрифта текста для мобильных устройств */
+    }
+   }
+   
+   .gallery {
+    max-width: 80%; /* Определяет максимальную ширину галереи */
+    margin: 0 auto; /* Выравнивает галерею по центру экрана */
+    max-height: 80%;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяет изображения по горизонтали */
+    margin-bottom: 20px; /* Отступ между рядами изображений */
+    justify-content: space-around;
+  }
+  
+  .image-row img {
+    width: calc(33.3333% - 6.6666px); /* Вычитаемый пиксельный эквивалент — это примерно место для отступов между изображениями */
+    height: auto; /* Сохранение пропорций изображения */
+  }
+  
+  /* Добавляем небольшой отступ между изображениями */
+  .image-row img:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  /* Адаптивность для более маленьких экранов */
+  @media (max-width: 768px) {
+    .image-row {
+      flex-direction: column;
+    }
+  
+    .image-row img {
+      width: 90%; /* на маленьких экранах изображения занимают всю ширину */
+      margin-right: 0; /* Убираем отступы справа для изображений, так как они стоят в столбец */
+    }
+  
+    .image-row:not(:last-child) {
+      margin-bottom: 10px; /* Отступ между изображениями в столбце */
+    }
+  }
+.product-categories{
+  margin-top: 20px;
+}
+
+  .product-categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-categories h3 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .product-categories ul {
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0;
+  }
+  
+  .product-categories li {
+    background: #f8f8f8; /* Цвет фона для каждого элемента списка */
+    margin-bottom: 5px; /* Отступы между элементами списка */
+    padding: 10px; /* Внутренние отступы в элементах списка */
+    border-radius: 5px; /* Скругление углов элементов списка */
+  }
+  .order-button {
+    display: block; /* Блочный тип позволяет выровнять элемент по центру */
+    width: 200px; /* Установим ширину кнопки */
+    margin: 20px auto; /* Выравнивание по центру и добавляем отступ сверху и снизу */
+    padding: 10px 20px; /* Поля внутри кнопки для большего удобства нажатия */
+    font-size: 16px; /* Размер шрифта в кнопке */
+    color: #ffffff; /* Цвет текста */
+    background-color: #007bff; /* Фоновый цвет кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругляем углы */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    text-align: center; /* Центрируем текст в кнопке */
+    text-decoration: none; /* Убираем подчеркивание текста как для ссылки */
+  }
+  
+  .order-button:hover {
+    background-color: #0056b3; /* Темный оттенок фона при наведении */
+  }
